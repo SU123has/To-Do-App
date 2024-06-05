@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+:root {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  --transition-speed: 600ms;
+}
+
+.wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, rgb(107, 1, 107), rgb(18, 18, 173));
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: linear-gradient(135deg, white, grey);
+  padding: 40px;
+  border-radius: 20px;
+  min-width: 50vw;
+}
+
+.container h2 {
+  font-weight: 900;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
+  margin-bottom: 30px;
+}
+
+.addTask {
+  background-color: white;
+  padding: 5px 5px 5px 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  margin-bottom: 25px;
+}
+
+.addTask input {
+  outline: none;
+  border: none;
+  flex: 1; /*takes full width*/
+  background: transparent;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.addTask button {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: rgb(229, 101, 3);
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.addTask button:hover {
+  color: rgb(243, 120, 26);
+  transition: var(--transition-speed);
+}
+
+.list-container {
+  background-color: rgba(255, 255, 255, 0.532);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.list-container li {
+  list-style: none;
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.77);
+  border-radius: 10px;
+  padding: 12px 8px 12px 30px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.list-container li::before {
+  content: "";
+  height: 28px;
+  width: 28px;
+  display: inline-block;
+  border-radius: 50%;
+  background-image: url("assests/dry-clean.png");
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+}
+
+.list-container li.checked {
+  text-decoration: line-through;
+  color: #555;
+  background: linear-gradient(to right, rgb(206, 247, 82), white);
+  transition: 600ms;
+}
+
+.list-container li.checked::before {
+  background-image: url("assests/checked.png");
+  transition: 300ms;
+}
+
+.list-container li span {
+  position: absolute;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+  top: 12px;
+  font-size: 1.1 rem;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+.list-container li span:hover {
+  background-color: rgb(177, 176, 176);
+  cursor: pointer;
+  transition: var(--transition-speed);
+}
+
+.wrapper .copyright {
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  margin-top: 50px;
+}
