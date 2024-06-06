@@ -18,13 +18,16 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: linear-gradient(135deg, rgb(107, 1, 107), rgb(18, 18, 173));
+  background: black;
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: white;
 }
 
+body {
+  overflow-x: hidden;
+}
 .noHighlight {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
