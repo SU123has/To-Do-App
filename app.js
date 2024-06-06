@@ -1,6 +1,14 @@
 const inputBox = document.querySelector("#input-box");
 const lists = document.querySelector(".list-container");
 
+//pressing enter in input submits the task
+inputBox.addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    addTask();
+  }
+});
+
 function addTask() {
   if (inputBox.value === "") {
     alert("Empty task! Write something..");
