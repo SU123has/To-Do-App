@@ -6,7 +6,9 @@ function addTask() {
     alert("Empty task! Write something..");
   } else {
     let newTask = document.createElement("li");
-    newTask.innerText = inputBox.value;
+    let newTaskText = document.createElement("p");
+    newTaskText.innerText = inputBox.value;
+    newTask.appendChild(newTaskText);
     lists.appendChild(newTask);
     let cross = document.createElement("span");
     cross.innerHTML = "\u00d7";

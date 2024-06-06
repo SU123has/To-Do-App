@@ -15,7 +15,7 @@
 
 .wrapper {
   min-height: 100vh;
-  width: 100vw;
+  min-width: 100vw;
   background: linear-gradient(135deg, rgb(107, 1, 107), rgb(18, 18, 173));
   padding: 10px;
   display: flex;
@@ -28,7 +28,7 @@
   background: linear-gradient(135deg, white, grey);
   padding: 40px;
   border-radius: 20px;
-  min-width: 50vw;
+  max-width: 80%;
 }
 
 .container h2 {
@@ -87,6 +87,8 @@
   padding: 12px 8px 12px 30px;
   margin-bottom: 10px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   align-items: center;
   position: relative;
   cursor: pointer;
@@ -103,6 +105,11 @@
   background-size: cover;
   background-position: center;
   margin-right: 20px;
+}
+
+.list-container li p {
+  width: 80%;
+  word-wrap: break-word;
 }
 
 .list-container li.checked {
@@ -141,4 +148,32 @@
   color: white;
   font-size: 0.8rem;
   margin-top: 50px;
+}
+
+@media only screen and (max-width: 440px) {
+  :root {
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    --transition-speed: 600ms;
+  }
+  .container {
+    padding: 20px;
+  }
+  .list-container {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  :root {
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+    --transition-speed: 600ms;
+  }
+  .container {
+    padding: 10px;
+  }
+  .list-container {
+    padding: 10px;
+  }
 }
