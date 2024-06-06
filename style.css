@@ -92,7 +92,6 @@
   align-items: center;
   position: relative;
   cursor: pointer;
-  border: 1px solid transparent;
 }
 
 .list-container li::before {
