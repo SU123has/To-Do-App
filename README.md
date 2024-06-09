@@ -9,3 +9,10 @@ To-Do-App (With LocalStorage Support)
 <li>Customized ScrollBar</li>
 <li>Fixed overfall UI</li>
 </ul>
+
+<h2>Fixes and Added features v2.1</h2>
+<ul>
+<li>(new)Tasks rearrangement</li>
+<li>Fixes Mobile UI inconsistencies</li>
+<li>Fixed overfall UI</li>
+</ul>
