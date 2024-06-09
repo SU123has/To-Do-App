@@ -172,6 +172,55 @@ body {
   transition: var(--transition-speed);
 }
 
+/* to style li items while dragging */
+/* .gu-mirror is the element which in drag state */
+.gu-mirror {
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.77);
+  border-radius: 10px;
+  padding: 12px 8px 12px 30px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.gu-mirror::before {
+  content: "";
+  height: 28px;
+  width: 28px;
+  display: inline-block;
+  border-radius: 50%;
+  background-image: url("assests/dry-clean.png");
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+}
+
+.gu-mirror p {
+  width: 80%;
+  word-wrap: break-word;
+}
+
+.gu-mirror.checked {
+  text-decoration: line-through;
+  color: #555;
+  background: linear-gradient(to right, rgb(206, 247, 82), white);
+  transition: 600ms;
+}
+
+.gu-mirror.checked::before {
+  background-image: url("assests/checked.png");
+  transition: 300ms;
+}
+
+.gu-mirror span {
+  display: none;
+}
+
 .wrapper .copyright {
   text-align: center;
   color: white;
