@@ -16,3 +16,9 @@ To-Do-App (With LocalStorage Support)
 <li>Fixes Mobile UI inconsistencies</li>
 <li>Fixed overfall UI</li>
 </ul>
+
+<h2>Fixes and Added features v2.2</h2>
+<ul>
+<li>(new)Pending and completed tabs</li>
+<li>(new)Added Clear button to clear all tasks</li>
+</ul>
