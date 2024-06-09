@@ -12,8 +12,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.css"
+      integrity="sha512-gGkweS4I+MDqo1tLZtHl3Nu3PGY7TU8ldedRnu60fY6etWjQ/twRHRG2J92oDj7GDU2XvX8k6G5mbp0yCoyXCA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body>
+  <body onload="init()">
     <div class="wrapper">
       <div class="container">
         <h2>ToDo List <i class="fa-solid fa-clipboard-list"></i></h2>
@@ -23,12 +30,18 @@
             <i class="fa-solid fa-circle-plus"></i>
           </button>
         </div>
-        <ul class="list-container noHighlight"></ul>
+        <ul class="list-container noHighlight" id="tasksList"></ul>
       </div>
       <p class="copyright">
         &copy; 2024 Suhas. All rights reserved. Website made by Suhas.
       </p>
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.min.js"
+      integrity="sha512-NgXVRE+Mxxf647SqmbB9wPS5SEpWiLFp5G7ItUNFi+GVUyQeP+7w4vnKtc2O/Dm74TpTFKXNjakd40pfSKNulg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="app.js"></script>
   </body>
 </html>

@@ -1,3 +1,7 @@
+function init() {
+  dragula([document.querySelector("#tasksList")]);
+}
+
 const inputBox = document.querySelector("#input-box");
 const lists = document.querySelector(".list-container");
 
